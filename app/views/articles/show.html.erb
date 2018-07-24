@@ -1,0 +1,13 @@
+<div class="articles-container">
+  <h1><%= @article.title %></h1>
+  <div class="article-box">
+    <%= @article.content %> <%= link_to "", edit_article_path(@article), class: "list-item fas fa-edit" %>
+        <%= link_to "", destroy_path(@article), class: "fas fa-trash-alt trash",
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+   </div>
+  <%= link_to "Back to index", articles_path %>
+
+ </div>
+
+

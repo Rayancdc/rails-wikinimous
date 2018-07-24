@@ -1,0 +1,11 @@
+<div class="articles-container">
+  <h1>All articles</h1>
+  <% @articles.each do |article| %>
+    <div class="article-box"><a href="/articles/<%= article.id %>"><%= article.title %></a> <%= link_to "", edit_article_path(article), class: "list-item fas fa-edit" %>
+        <%= link_to "", destroy_path(article), class: "fas fa-trash-alt trash",
+              method: :delete,
+              data: { confirm: "Are you sure?" } %></div>
+  <% end %>
+
+  <%= link_to "Create new article", new_article_path %>
+</div>

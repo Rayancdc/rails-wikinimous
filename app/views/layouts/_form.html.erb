@@ -1,0 +1,15 @@
+<div class="article-box">
+  <ul>
+  <%= form_for @article, :html => { :id => "form-edit" } do |f| %>
+    <li>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    </li>
+    <li>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    </li>
+    <%= f.submit %>
+  <% end %>
+  </ul>
+</div>

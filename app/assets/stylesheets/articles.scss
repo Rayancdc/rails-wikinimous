@@ -1,0 +1,33 @@
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(60, 60, 60, 1);
+  &:hover {
+    text-decoration: none;
+    color: rgba(60, 60, 60, 0.8);
+  }
+}
+
+.list-item {
+  margin: 0 8px;
+}
+
+.article-box {
+  background-color: rgba(230, 230, 230, 1);
+  margin: 16px;
+  border-radius: 8px;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.articles-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 320px;
+}
